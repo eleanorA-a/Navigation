@@ -1,5 +1,5 @@
 //
-//  Second View.swift
+//  ThirdView.swift
 //  Navigation
 //
 //  Created by Scholar on 8/7/25.
@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-struct Second_View: View {
+struct ThirdView: View {
     var body: some View {
-        Text("Email or call me")
-       
-        
+        Text("My Name is Eleanor")
     }
 }
 
 #Preview {
-    Second_View()
+    ThirdView()
 }

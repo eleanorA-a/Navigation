@@ -14,12 +14,19 @@ struct ContentView: View {
             VStack{
                 Text("This is the root view 🌳")
                 NavigationLink(destination: Second_View()) {
-                    Text("Click me!")//the lable content shows to the user the link
-                }
-                    NavigationLink(destination: Text("No number before 1,000 has the letter A in it")) {
-                        Text("Click me for a fun fact!")
-                    }//part of navigation link 2
+                    Text("Contact!")//the lable content shows to the user the link
                 }//part of navigation link 1
+                    NavigationLink(destination: ThirdView()) {
+                        Text("About!")
+                    }//part of navigation link 2
+                
+                NavigationLink(destination: Text("What do you need help with?")){
+                        Text("Help!")
+                        }//part of navigation link 3
+                NavigationLink(destination: Text("Click here for home page")){
+                        Text("Home!")
+                        }//part of navigation link 4
+                }//Closing of Vstack
             .navigationTitle("Home🏡")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
